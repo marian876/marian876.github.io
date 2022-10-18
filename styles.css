@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Rubik+Dirt&display=swap');
+
+body {
+    font-family: 'Concert One', cursive;
+    background-color: #4D77FF;
+}
+
+#seleccionarMascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 100px;
+    margin-block: 10px;
+    font-weight: 200;
+    font-family: 'Rubik Dirt', cursive;
+
+}
+
+.subtitulo {
+    color: white;
+    font-size: 33px;
+    font-weight: 100;
+}
+
+.tarjetas,
+.tarjetasAtaques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjetaDeMokepon {
+    width: 180px;
+    height: 100px;
+    background-color: #56BBF1;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid #5EE6EB;
+    color: #F2FA5A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjetaDeMokepon img {
+    width: 90px;
+}
+
+#btnMascota {
+    width: 151px;
+    height: 53px;
+    border-radius: 23px;
+    border: 2px solid #F2FA5A;
+    background: #5EE6EB;
+    color: #4D77FF;
+    font-family: 'Concert One', cursive;
+    font-size: large;
+    margin: 20px;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background: #5EE6EB;
+    border: 2px solid #56BBF1;
+}
+
+#seleccionarAtaque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnAtaque {
+    width: 100px;
+    height: 70px;
+    background-color: #56BBF1;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid #5EE6EB;
+    color: #F2FA5A;
+    font-family: 'Concert One', cursive;
+    font-size: large;
+}
+
+#mensajes {
+    width: 340px;
+    background: #F2FA5A;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4D77FF;
+    font-size: large;
+}
+
+#btnReiniciar {
+    border: none;
+    color: #56BBF1;
+    background: #F2FA5A;
+    font-family: 'Concert One', cursive;
+    font-size: large;
+}
+
+#verAtaques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.verAtaquesJugador,
+.verAtaquesEnemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#verMapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#verMapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 23px;
+    border: 2px solid #F2FA5A;
+    background: #5EE6EB;
+    color: #4D77FF;
+    font-family: 'Concert One', cursive;
+    font-size: large;
+    margin: 2px;
+}
+
+@media(max-width:560px) {
+
+    .tarjetas,
+    .tarjetasAtaques {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:300px) {
+    #verMapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
